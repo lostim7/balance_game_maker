@@ -22,7 +22,7 @@ function Navbar() {
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="검색하기" aria-label="Search"/>
-          <button class="btn btn-outline-success" type="submit">검색</button>
+          <button class="asd btn btn-outline-success" type="submit">검색</button>
         </form>
       </div>
     </div>
