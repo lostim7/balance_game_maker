@@ -1,7 +1,7 @@
 .main {
     background-color: white;
-    border-top: 30px;
-    padding: 400px;
+    margin: 30px;
+    padding: 300px;
     border-radius: 5px;
     color: #adaeb9;
     display: grid;
@@ -19,7 +19,15 @@
     align-items: center;
 }
 
-.asd {
+.wide {
     padding-right: 30px;
     padding-left: 30px;
+}
+
+#navbar {
+    width: 95%;
+}
+
+.korHorizon {
+    white-space: nowrap;
 }
