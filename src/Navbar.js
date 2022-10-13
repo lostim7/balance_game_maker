@@ -10,13 +10,13 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">홈</a>
+            <Link to="/" className="nav-link active" aria-current="page">홈</Link>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">찾아보기</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">만들기</a>
+            <Link to="make" className="nav-link">만들기</Link>
           </li>
           <li className="nav-item">
             <a className="nav-link disabled">마이 페이지</a>
