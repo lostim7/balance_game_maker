@@ -13,7 +13,7 @@ function Navbar() {
             <Link to="/" className="nav-link active" aria-current="page">홈</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">찾아보기</a>
+            <Link to="look" className="nav-link">찾아보기</Link>
           </li>
           <li className="nav-item">
             <Link to="make" className="nav-link">만들기</Link>

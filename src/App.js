@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 import Navbar from "./Navbar";
 import Home from "./routes/Home";
+import Look from "./routes/Look";
 import Make from "./routes/Make";
+import Play from "./routes/Play";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/make" element={<Make />}></Route>
+          <Route path="/look" element={<Look />}></Route>
+          <Route path="/play" element={<Play />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
