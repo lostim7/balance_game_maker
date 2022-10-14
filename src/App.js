@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/make" element={<Make />}></Route>
           <Route path="/look" element={<Look />}></Route>
-          <Route path="/play" element={<Play />}></Route>
+          <Route path="/play/:id" element={<Play />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
