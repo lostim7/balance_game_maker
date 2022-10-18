@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import Send from "../components/Send";
 import Topic from "../components/Topic";
+import { topiclist } from "../data/data";
 
 function Look() {
-    const topiclist = [{id: 1, topic: 'Potato'}, {id: 2, topic: 'Tomato'}, {id: 3, topic: 'Pineapple Pizza'}, {id:4, topic: 'Mintchocolate Icecream'}]
+    
+    Send(topiclist, 'topics')
     return(
         <div className="main">
             {topiclist.map((topic) => (
