@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 import LoadImage from "./components/LoadImage";
+import LoadTopicImg from "./components/LoadTopicImg";
 import Navbar from "./Navbar";
 import Home from "./routes/Home";
 import Look from "./routes/Look";
@@ -16,7 +17,7 @@ function App() {
           <Route path="/make" element={<Make />}></Route>
           <Route path="/look" element={<Look />}></Route>
           <Route path="/play/:id" element={<Play />}></Route>
-          <Route path="/test" element={<LoadImage />}></Route>
+          <Route path="/test" element={<LoadTopicImg />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
