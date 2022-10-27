@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes} from "react-router-dom";
-import LoadImage from "./components/LoadImage";
 import LoadTopicImg from "./components/LoadTopicImg";
 import Navbar from "./Navbar";
 import Home from "./routes/Home";
