@@ -1,7 +1,10 @@
-function handleSelectedImg() {
-    const nextFavorites = [...favorites, mainCat];
-    setFavorites(nextFavorites);
-    jsonLocalStorage.setItem("favorites", nextFavorites);
-  }
+import Favorites from "./Favorites";
 
-export default handleSelectedImg
+function handleSelectImg(asdf) {
+  const addFavKey = asdf
+  return(
+    Favorites(addFavKey)
+  )
+}
+
+export default handleSelectImg;

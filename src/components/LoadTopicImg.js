@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import Topic from "./Topic";
+import handleSelectedImg from "./handleSelectedImg";
 
 function LoadTopicImg() {
   const [loading, setLoading] = useState(true);
   const [imgs, setImgs] = useState([]);
   const access_Key = process.env.REACT_APP_API_KEY;  //API 키값(.env)
-  const topic = "Potato"
+  const topic = "mint-chocolate"
   const getImgs = async () => {
     const json = await (
       await fetch(
@@ -18,6 +18,7 @@ function LoadTopicImg() {
   useEffect(() => {
     getImgs();
   }, []);
+  console.log(imgs)
   return (
     <div>
       {loading ? (
@@ -25,8 +26,8 @@ function LoadTopicImg() {
       ) : (
         <div>
           {imgs.map((img) => (
-            <div key={img.id}>
-              <button onClick={Topic}>
+            <div key={img.id} >
+              <button onClick={handleSelectedImg(img.id)}>
                 <img src={img.urls.regular} />
               </button>
             </div>
