@@ -19,7 +19,7 @@ function Navbar() {
             <Link to="make" className="nav-link">만들기</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link disabled">마이 페이지</a>
+          <Link to="mypage" className="nav-link">마이 페이지</Link>
           </li>
         </ul>
         <form className="d-flex" role="search">

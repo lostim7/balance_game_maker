@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Home from "./routes/Home";
 import Look from "./routes/Look";
 import Make from "./routes/Make";
+import MyFavorites from "./routes/MyFavorite";
 import Play from "./routes/Play";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/make" element={<Make />}></Route>
           <Route path="/look" element={<Look />}></Route>
           <Route path="/play/:id" element={<Play />}></Route>
+          <Route path="mypage" element={<MyFavorites />}></Route>
           <Route path="/test" element={<LoadTopicImg />}></Route>
         </Routes>
       </BrowserRouter>
