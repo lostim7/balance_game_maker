@@ -1,6 +1,6 @@
 function Result() {
     return(
-        <div></div>
+        <div>ㅁㄴㅇㄹ</div>
     )
 }
 

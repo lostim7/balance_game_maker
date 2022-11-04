@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
+import Favorites from "./Favorites";
 import HandleSelectedImg from "./handleSelectedImg";
+import jsonLocalStorage from "./jsonLocalStorage";
 
 function LoadTopicImg() {
   const [loading, setLoading] = useState(true);
@@ -18,7 +20,8 @@ function LoadTopicImg() {
   useEffect(() => {
     getImgs();
   }, []);
-/*   console.log(imgs) */
+  
+/*   console.log(favlist) */
   return (
     <div>
       {loading ? (
@@ -27,7 +30,7 @@ function LoadTopicImg() {
         <div>
           {imgs.map((img) => (
             <div key={img.id} >
-              <button onClick={() => HandleSelectedImg(img.id)}>
+              <button onClick={() => Favorites(img.urls.regular)}>
                 <img src={img.urls.regular} />
               </button>
             </div>

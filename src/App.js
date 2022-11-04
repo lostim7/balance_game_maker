@@ -6,6 +6,7 @@ import Look from "./routes/Look";
 import Make from "./routes/Make";
 import MyFavorites from "./routes/MyFavorite";
 import Play from "./routes/Play";
+import Result from "./routes/Result";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route path="/make" element={<Make />}></Route>
           <Route path="/look" element={<Look />}></Route>
           <Route path="/play/:id" element={<Play />}></Route>
-          <Route path="mypage" element={<MyFavorites />}></Route>
+          <Route path="/mypage" element={<MyFavorites />}></Route>
+          <Route path="/result" element={<Result />}></Route>
           <Route path="/test" element={<LoadTopicImg />}></Route>
         </Routes>
       </BrowserRouter>
