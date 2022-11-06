@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Favorites from "./Favorites";
-import HandleSelectedImg from "./handleSelectedImg";
-import jsonLocalStorage from "./jsonLocalStorage";
 
 function LoadTopicImg() {
   const [loading, setLoading] = useState(true);
@@ -30,9 +29,11 @@ function LoadTopicImg() {
         <div>
           {imgs.map((img) => (
             <div key={img.id} >
+              <Link to="/result">
               <button onClick={() => Favorites(img.urls.regular)}>
                 <img src={img.urls.regular} />
               </button>
+              </Link>
             </div>
           ))}
         </div>
