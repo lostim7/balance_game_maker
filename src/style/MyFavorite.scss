@@ -8,6 +8,10 @@
     position: absolute;
     left: 10px;
     top: 10px;
+    opacity: 0.65;
+    background-color: white;
+    border-width: 0px;
+    border-radius: 3px;
 }
 
 .Wrap {
@@ -15,4 +19,8 @@
 	height:auto;
     width: auto;
     display:inline-block;
+
+    .DelButton{display: none;}
+    
+    &:hover{.DelButton{display: block;}}
 }
