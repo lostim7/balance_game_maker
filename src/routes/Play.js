@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Favorites from "../components/Favorites";
+import { topiclist } from "../data/data";
 
 function LoadTopicImg() {
-    console.log(window.location.search)
+  const { id } = useParams();
+  console.log(id)
   const [loading, setLoading] = useState(true);
   const [imgs, setImgs] = useState([]);
   const access_Key = process.env.REACT_APP_API_KEY;  //API 키값(.env)
-  const topic = "tomato"
+  const topic = topiclist[id].topic
   const getImgs = async () => {
     const json = await (
       await fetch(

@@ -1,4 +1,4 @@
-function Send (send, name) {
+/* function Send (send, name) {
   const sendData = {name: send}
   
   const aTag = document.querySelector('a');
@@ -7,4 +7,4 @@ function Send (send, name) {
   });
 }
 
-export default Send;
+export default Send; */

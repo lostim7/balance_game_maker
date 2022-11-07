@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Topic({id, topic}) {
     return (
         <div id="topics">
-            <Link to={`/play/${id}`}>{topic}</Link>
+            <Link className="topics" to={`/play/${id}`}>{topic}</Link>
         </div>
     )
 }

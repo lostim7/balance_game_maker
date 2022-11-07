@@ -1,4 +1,18 @@
 .favimgs {
     height: 16vw;
     padding: 1px;
+    position: relative;
+}
+
+.DelButton {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.Wrap {
+    position: relative;
+	height:auto;
+    width: auto;
+    display:inline-block;
 }
