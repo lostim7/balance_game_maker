@@ -6,6 +6,7 @@ import Navbar from './Navbar';
 import "./style/Home.css"
 import "./style/MyFavorite.scss"
 import "./style/Look.scss"
+import "./style/Play.css"
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

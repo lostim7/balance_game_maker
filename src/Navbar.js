@@ -10,16 +10,16 @@ function Navbar() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <Link to="/" className="nav-link active" aria-current="page">홈</Link>
+            <Link id="homebar" to="/" className="nav-link" aria-current="page">홈</Link>
           </li>
           <li className="nav-item">
-            <Link to="look" className="nav-link">찾아보기</Link>
+            <Link id="lookbar" to="look" className="nav-link">찾아보기</Link>
           </li>
           <li className="nav-item">
-            <Link to="make" className="nav-link">만들기</Link>
+            <Link id="makebar" className="nav-link disabled">만들기</Link>
           </li>
           <li className="nav-item">
-          <Link to="mypage" className="nav-link">마이 페이지</Link>
+          <Link id="myfavbar" to="mypage" className="nav-link">마이 페이지</Link>
           </li>
         </ul>
         <form className="d-flex" role="search">

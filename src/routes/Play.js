@@ -31,10 +31,10 @@ function LoadTopicImg() {
       ) : (
         <div>
           {imgs.map((img) => (
-            <div key={img.id} >
+            <div className="NoWrap" key={img.id} >
               <Link to="/result">
-              <button onClick={() => Favorites(img.urls.regular)}>
-                <img src={img.urls.regular} />
+              <button className="Playbutton" onClick={() => Favorites(img.urls.regular)}>
+                <img className="Playimg" src={img.urls.regular} />
               </button>
               </Link>
             </div>

@@ -1,0 +1,22 @@
+.NoWrap {
+    display:inline-block;
+}
+
+.Playbutton {
+    padding: 0px;
+    border: 0px;
+}
+
+.Play1 {
+    margin-right: 30px;
+}
+
+.Play2 {
+
+}
+
+.Playimg {
+    width: 35vw;
+    margin:auto;
+    aspect-ratio: 14 / 9;
+}

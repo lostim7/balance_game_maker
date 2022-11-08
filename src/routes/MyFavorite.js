@@ -9,7 +9,7 @@ function MyFavorites() {
             {favlist.map((url) => (
               <div className="Wrap">
                   <img className="favimgs" src={url} />
-                  <button className="DelButton" onClick={() => DeleteFav(url)}>X</button>
+                  <button className="DelButton" onClick={() => DeleteFav(url)}>✖️</button>
               </div>
             ))}
           </div>
